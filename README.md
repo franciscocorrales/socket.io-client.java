@@ -29,7 +29,7 @@ compile 'com.github.nkzawa:socket.io-client:0.3.0'
 Socket.IO-client.java has almost the same api and features with the original JS client. You use `IO#socket` to initialize `Socket`:
 
 ```java
-socket = IO.socket("http://localhost");
+final Socket socket = IO.socket("http://localhost");
 socket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
 
   @Override
